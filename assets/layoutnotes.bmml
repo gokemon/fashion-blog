@@ -1,0 +1,10 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="583" measuredH="1093" mockupW="454" mockupH="1076">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="129" y="17" w="454" h="1076" measuredW="1194" measuredH="1862" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/fashion_blog_result.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

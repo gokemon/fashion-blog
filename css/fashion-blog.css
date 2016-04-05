@@ -1,0 +1,123 @@
+@import "reset.css";
+/*after the reset, go and set H tags
+http://www.w3schools.com/tags/tag_hn.asp*/
+
+body{
+
+}
+
+/* Header section of page */
+header{
+
+}
+header h1{
+   display: inline;
+}
+header h2{
+   display: inline;
+}
+header nav{
+
+}
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+header nav li {
+    float: left;
+    border-right: 1px solid #bbb;
+    background-color: #333;
+}
+header nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+header nav li a:hover {
+    background-color: #111;
+}
+header nav li:last-child {
+    border-right: none;
+}
+
+h1{
+
+}
+
+/*Main seperates Header of the page from the Main center Section of the page, and from the Footer of the page*/
+main{
+
+}
+
+section{
+
+}
+section article{
+
+}
+section article h1{
+/* good solid black text*/
+}
+section article time{
+	/*gray font*/
+	/*as tall as the H1*/
+}
+img{
+	width: 900px;
+	height: 300px;
+	
+}
+section article p{
+ /*dropcap goes here*/
+ /*slightly off-black, off-gray text*/
+}
+section article footer{
+/*padding */
+/*bottom line*/
+/*Continues*/
+}
+
+
+
+/* Footer section of page */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer nav{
+
+}
+footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+footer nav li {
+    float: left;
+    border-right: 1px solid #bbb;
+    background-color: #333;
+}
+footer nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+footer nav li a:hover {
+    background-color: #111;
+}
+footer nav li:last-child {
+    border-right: none;
+}
+footer h6{
+
+}

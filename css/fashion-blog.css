@@ -1,123 +1,262 @@
-@import "reset.css";
+/*@import "reset.css";*/
 /*after the reset, go and set H tags
 http://www.w3schools.com/tags/tag_hn.asp*/
+/*<link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic' rel='stylesheet' type='text/css'>*/
+@import url('http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic');
+
+*, *:before, *:after  {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	/* both above are overriding browser default, h's usually have big margins and padding */
+}
+
+
+/*=============================================================================================*/
+/*	my page code below, and rest stuff above												   */
+/*=============================================================================================*/
 
 body{
-
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
 }
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	/*border: dotted .5px green;*/
+}
+
 
 /* Header section of page */
-header{
+header.main-header{
+
+	/*border: dotted .5px green;*/
+}
+header.main-header h1{
+	display: inline;
+	margin-right: 5px;
+	color: #ff0000; /*red*/
+}
+header.main-header h2{
+	display: inline;
+	font-size: 1.5em;
+	margin-bottom: .5em;
+	color: #888;
+}
+header.main-header nav{
 
 }
-header h1{
-   display: inline;
-}
-header h2{
-   display: inline;
-}
-header nav{
-
-}
-header nav ul {
+header.main-header nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
 }
-header nav li {
+header.main-header nav ul li{
     float: left;
     border-right: 1px solid #bbb;
     background-color: #333;
+	width: 16%;
+	margin: 0;
+	padding: 0;
 }
-header nav li a {
+header.main-header nav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-header nav li a:hover {
+header.main-header nav li a:hover {
     background-color: #111;
 }
-header nav li:last-child {
+header.main-header nav li:last-child {
     border-right: none;
 }
 
-h1{
 
-}
+
 
 /*Main seperates Header of the page from the Main center Section of the page, and from the Footer of the page*/
-main{
-
+main.main-content{
+	width: 960px;
+	margin: 0 auto;
+	border: solid 1px orange;
+	padding: 10px 0px;
 }
 
-section{
+/*Section is the left or "main" section of the page where the articles will into
+	Seperate and to the right is the aside*/
+section.left-content{
+	border: solid 1px red;
+	float: left;
+	width: 66%;
+}
+section.left-content article{
 
 }
-section article{
-
-}
-section article h1{
+section.left-content article h1{
 /* good solid black text*/
+	font-size: 2em;
+	font-weight: normal;
+	color: black;
+	margin: 0;
+	padding: 0;
 }
-section article time{
+section.left-content article time{
 	/*gray font*/
 	/*as tall as the H1*/
+	font-size: 2em;
+	font-weight: normal;
+	color: #c0c0c0;
 }
-img{
-	width: 900px;
-	height: 300px;
-	
+section.left-content img{
+	width: 633px;
+	height: 198px;
 }
-section article p{
+section.left-content article p{
  /*dropcap goes here*/
  /*slightly off-black, off-gray text*/
+ 	margin: 2em 0 0;
 }
-section article footer{
-/*padding */
-/*bottom line*/
-/*Continues*/
+
+section.left-content article p:first-of-type:first-letter {	
+	float: left;
+	font-size: 5.5em;
+	line-height: 1;
+	color: #c0c0c0;
+	/*Top-Right-Bottom-Left*/
+	margin: -5px 5px 0px -2px;
+	padding: 0px;
+	vertical-align: text-top;
+
 }
+
+article footer{
+	margin: 0px;
+	border-bottom: #808080 1px solid;
+	padding: 50px 0px;
+	text-align: right;
+}
+article footer a{
+	/*color:#c0c0c0;*/
+	color: #ff0000; /*red*/
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+/*Aside is to the right of the Section inside of Main*/
+aside.right-content{
+	border: solid 1px red;
+	float: right;
+	width: 29%;
+}
+aside.right-content article{
+
+}
+aside.right-content article h2{
+	/*put a big margin above*/
+	margin-top: 65px;
+	font-size: 1.5em;
+	color: #c0c0c0;
+}
+aside.right-content article#adContainer1 {
+	/*width: 87px;*/
+	/*height: 72px;*/
+	margin:  30px 10px;
+	
+}
+
+
+aside.right-content article h3{
+	/*put a grey line above, like the article footers border*/
+	margin: 0px;
+	border-top: #808080 1px solid;
+	font-size: 1.5em;
+	color: #c0c0c0;
+}
+aside.right-content article p{
+	color:#c0c0c0;
+}
+aside.right-content article footer{
+
+}
+/*Gonna have some UL/LI on the side, but do I need to "treat" them?*/
 
 
 
 /* Footer section of page */
-footer{
+footer.main-footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+    clear: both;
+	color: #BBB;
 }
-footer nav{
+footer.main-footer nav {
 
 }
-footer nav ul {
+footer.main-footer nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     
 }
-footer nav li {
+footer.main-footer nav li  {
     float: left;
     border-right: 1px solid #bbb;
     background-color: #333;
 }
-footer nav li a {
+footer.main-footer nav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-footer nav li a:hover {
+footer.main-footer nav li a:hover {
     background-color: #111;
 }
-footer nav li:last-child {
+footer.main-footer nav li:last-child {
     border-right: none;
 }
-footer h6{
+footer.main-footer h6{
 
+}
+
+/*=============================================================================================*/
+/*	imported            																	   */
+/*=============================================================================================*/
+/** CLEARFIX HACK:;
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }

@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body{
 	font-family: 'Lato', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.5;
 }
 .wrapper {
@@ -30,6 +30,7 @@ body{
 	margin: 0 auto;
 	/*border: dotted .5px green;*/
 }
+
 
 
 /* Header section of page */
@@ -86,14 +87,14 @@ header.main-header nav li:last-child {
 main.main-content{
 	width: 960px;
 	margin: 0 auto;
-	border: solid 1px orange;
+	/*border: solid 1px orange;*/
 	padding: 10px 0px;
 }
 
 /*Section is the left or "main" section of the page where the articles will into
 	Seperate and to the right is the aside*/
 section.left-content{
-	border: solid 1px red;
+	/*border: solid 1px red;*/
 	float: left;
 	width: 66%;
 }
@@ -137,6 +138,7 @@ section.left-content article p:first-of-type:first-letter {
 
 }
 
+
 article footer{
 	margin: 0px;
 	border-bottom: #808080 1px solid;
@@ -151,9 +153,10 @@ article footer a{
 }
 
 
+
 /*Aside is to the right of the Section inside of Main*/
 aside.right-content{
-	border: solid 1px red;
+	/*border: solid 1px red;*/
 	float: right;
 	width: 29%;
 }
@@ -188,6 +191,7 @@ aside.right-content article footer{
 
 }
 /*Gonna have some UL/LI on the side, but do I need to "treat" them?*/
+
 
 
 
@@ -231,32 +235,3 @@ footer.main-footer h6{
 
 }
 
-/*=============================================================================================*/
-/*	imported            																	   */
-/*=============================================================================================*/
-/** CLEARFIX HACK:;
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
